@@ -1,0 +1,11 @@
+Model Information:
+* title:	Gears of war custom lancer
+* source:	https://sketchfab.com/3d-models/gears-of-war-custom-lancer-3c52fcfea5de41e190007f4e43c7fd92
+* author:	Chenchanchong (https://sketchfab.com/Chenchanchong)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "Gears of war custom lancer" (https://sketchfab.com/3d-models/gears-of-war-custom-lancer-3c52fcfea5de41e190007f4e43c7fd92) by Chenchanchong (https://sketchfab.com/Chenchanchong) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
