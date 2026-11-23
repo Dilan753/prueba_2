@@ -2,7 +2,7 @@
 **Autor:** Dilan Andrés Rodríguez Juyo
 **Materia:** Computación Gráfica
 
-El proyectó carga un modelo glTF, lo ilumina con el modelo de **Phong** y hace que una de sus piezas recorra una **curva de Bézier** con una cámara en tercera persona. Todo se controla desde una interfaz hecha con **Dear ImGui**.
+El proyecto carga un modelo glTF, lo ilumina con el modelo de **Phong** y hace que una de sus piezas recorra una **curva de Bézier** con una cámara en tercera persona. Todo se controla desde una interfaz hecha con **Dear ImGui**.
 
 ## Qué hace
 
@@ -43,9 +43,9 @@ El proyectó carga un modelo glTF, lo ilumina con el modelo de **Phong** y hace 
 - **Windows** de 64 bits
 - **Visual Studio 2022 o superior** con el componente *Desarrollo para el escritorio con C++*
 - Una tarjeta gráfica compatible con **OpenGL 3.3**
-- La carpeta **`OpenGL`** incluida en este repositorio
+- La carpeta **`externos/OpenGL`** incluida en este repositorio
 
-### Librerías (incluidas en la carpeta `OpenGL`)
+### Librerías (incluidas en `externos/OpenGL`)
 
 | Librería | Para qué se usa |
 |---|---|
@@ -63,7 +63,7 @@ El proyectó carga un modelo glTF, lo ilumina con el modelo de **Phong** y hace 
 El proyecto busca las librerías en la ruta fija **`C:\OpenGL`**. Si se siguen estos pasos, **no hay que modificar nada dentro de Visual Studio**.
 
 1. **Clonar o descargar** este repositorio.
-2. **Copiar la carpeta `OpenGL`** del repositorio a la raíz del disco local, de modo que quede exactamente así:
+2. **Copiar la carpeta `externos/OpenGL`** del repositorio a la raíz del disco local, de modo que quede exactamente así:
 
    ```
    C:\OpenGL\glad
@@ -74,7 +74,7 @@ El proyecto busca las librerías en la ruta fija **`C:\OpenGL`**. Si se siguen e
    C:\OpenGL\imgui
    ```
 
-3. Abrir `proyrcto corte 3 finanzacion.slnx` con Visual Studio.
+3. Abrir `proyecto/proyrcto corte 3 finanzacion.slnx` con Visual Studio.
 4. Seleccionar la configuración **x64** (Debug o Release).
 5. Presionar **F5** (o *Depurar → Iniciar depuración*).
 
@@ -106,19 +106,16 @@ El modelo se carga con una ruta relativa (`gears_of_war_custom_lancer/scene.gltf
 ## Estructura del repositorio
 
 ```
-OpenGL/                          Librerías (copiar a C:\OpenGL)
-proyrcto corte 3 finanzacion/
-  ├─ proyrcto corte 3 finanzacion.cpp
-  ├─ Shaders.h  Buffers.h  Modelo.h
-  ├─ Camara.h   Bezier.h   LUZ.h   animacion.h
-  └─ gears_of_war_custom_lancer/   Modelo glTF y texturas
-proyrcto corte 3 finanzacion.slnx
+externos/
+  └─ OpenGL/                     Librerías (copiar a C:\OpenGL)
+proyecto/
+  ├─ proyrcto corte 3 finanzacion.slnx
+  └─ proyrcto corte 3 finanzacion/
+       ├─ proyrcto corte 3 finanzacion.cpp
+       ├─ Shaders.h  Buffers.h  Modelo.h
+       ├─ Camara.h   Bezier.h   LUZ.h   animacion.h
+       └─ gears_of_war_custom_lancer/   Modelo glTF y texturas
 ```
-
-## Capturas
-
-
-
 Créditos
 - Modelo **"Gears of war custom lancer"** de [Chenchanchong](https://sketchfab.com/Chenchanchong), disponible en [Sketchfab](https://sketchfab.com/3d-models/gears-of-war-custom-lancer-3c52fcfea5de41e190007f4e43c7fd92), con licencia [CC-BY-4.0](http://creativecommons.org/licenses/by/4.0/).
 - Librerías: [GLFW](https://www.glfw.org/), [GLAD](https://glad.dav1d.de/), [GLM](https://github.com/g-truc/glm), [stb](https://github.com/nothings/stb), [tinygltf](https://github.com/syoyo/tinygltf) y [Dear ImGui](https://github.com/ocornut/imgui).
